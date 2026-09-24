@@ -1,17 +1,11 @@
-<?php
-$config = require __DIR__ . '/databse.php';
+<head>
+    <meta charset="UTF-8">
+    <title>商品検索アプリ</title>
 
-$pdo = new PDO(
-    "mysql:host={$config['host']};dbname={$config['dbname']};charset=utf8mb4",
-    $config['user'],
-    $config['password']
-);
+    <link rel="stylesheet" href="">
+</head>
 
-$stmt = $pdo->prepare("SELECT * FROM `job`");
-$stmt->execute();
-
-$jobs = $stmt->fetchAll();
-foreach ($jobs as $job) {
-    echo $job['name'];
-    echo "<br>";
-}
+<form method="post" action="RunDatabse.php">
+    <input type="text" name="searchWord">
+    <button name="buttonWord">実行</button>
+</form>
