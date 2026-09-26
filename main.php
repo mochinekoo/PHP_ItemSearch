@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+?>
+
 <head>
     <meta charset="UTF-8">
     <title>商品検索アプリ</title>
@@ -8,9 +13,21 @@
 <nav class="menu_bar">
     <!-- <img class="left_item author_image" src="" alt=""> -->
     <ul class="menu_list">
-
+        <li class="menu_item"><a href="Login.php">ログイン</a></li>
     </ul>
 </nav>
+
+<div>
+    <?php
+    if (!isset($_SESSION['UserMail'])) {
+        echo "ログインすることで、商品を検索することができます!";
+        exit;
+    }
+    else {
+        echo $_SESSION['UserName'] . "さん";
+    }
+    ?>
+</div>
 
 <form class="form" method="post" action="RunDatabse.php">
     <input class="input" type="text" name="searchWord">
