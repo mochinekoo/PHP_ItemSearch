@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    font-family: "Rounded M+ 2p bold", serif;
+    font-size: 30px;
+    width: 80%;
+    height: 50px;
+    background: white;
+    border: #2a2a2c solid 3px;
+}
+
+.button {
+    font-family: "Rounded M+ 2p bold", serif;
+    font-weight: bold;
+    background: white;
+    color: #2a2a2c;
+}
