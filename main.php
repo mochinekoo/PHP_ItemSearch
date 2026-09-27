@@ -24,6 +24,11 @@ session_start();
         exit;
     }
 
+    if (isset($_SESSION['UserName'])) {
+        echo $_SESSION['UserName'] . "さん（メールアドレス）ようこそ。";
+        echo "<br>";
+    }
+
     if (isset($_SESSION['GitHubUserName'])) {
         echo $_SESSION['GitHubUserName'] . "さん（Github）ようこそ。";
         echo "<br>";
@@ -31,6 +36,7 @@ session_start();
 
     if (isset($_SESSION['DiscordUserName'])) {
         echo $_SESSION['DiscordUserName'] . "さん（Discord）ようこそ。";
+        echo "<br>";
     }
     ?>
 </div>

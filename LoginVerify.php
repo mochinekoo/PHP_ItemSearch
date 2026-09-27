@@ -19,6 +19,7 @@ $user = $stmt->fetch();
 var_dump($user);
 
 if ($user && password_verify($pass, $user['password'])) {
+    $_SESSION['TYPE'] = 'Mail';
     $_SESSION['UserMail'] = $user['email'];
     $_SESSION['UserName'] = $user['name'];
     header('Location: main.php');
