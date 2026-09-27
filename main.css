@@ -3,9 +3,19 @@ body {
 }
 
 .form {
-    margin-top: 10px;
+    width: 80%;
     display: flex;
-    justify-content: center;
+    background: #2a2a2c;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: #2a2a2c solid 5px;
+    border-radius: 10px;
+}
+
+.form label {
+    color: #e8e8ed;
+    font-family: "Noto Sans JP Black", serif;
 }
 
 .input {
@@ -22,4 +32,18 @@ body {
     font-weight: bold;
     background: white;
     color: #2a2a2c;
+}
+
+.GitHubButton {
+    width: 50%;
+    font-family: "Noto Sans JP Black", serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DiscordButton {
+    width: 50%;
+    font-family: "Noto Sans JP Black", serif;
+    margin-left: auto;
+    margin-right: auto;
 }

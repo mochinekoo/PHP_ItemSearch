@@ -19,13 +19,18 @@ session_start();
 
 <div>
     <?php
-    if (!isset($_SESSION['GitHubUserName'])) {
+    if (!isset($_SESSION['TYPE'])) {
         echo "ログインすることで、商品を検索することができます!";
         exit;
     }
 
     if (isset($_SESSION['GitHubUserName'])) {
         echo $_SESSION['GitHubUserName'] . "さん（Github）ようこそ。";
+        echo "<br>";
+    }
+
+    if (isset($_SESSION['DiscordUserName'])) {
+        echo $_SESSION['DiscordUserName'] . "さん（Discord）ようこそ。";
     }
     ?>
 </div>

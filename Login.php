@@ -18,11 +18,12 @@ session_start();
 
 <form class="form" method="post" action="LoginVerify.php">
     <label>
-        メールアドレス：
+        メールアドレス<br>
         <input class="input" type="text" name="LoginMail" required>
     </label>
+    <br>
     <label>
-        パスワード：
+        パスワード<br>
         <input class="input" type="password" name="LoginPass" required>
     </label>
 
@@ -30,5 +31,7 @@ session_start();
 </form>
 
 <form class="form" method="post" action="LoginOauth.php">
-    <button class="" name="githubButton">Githubでログイン</button>
+    <button class="GitHubButton" name="githubButton">Githubでログイン</button>
+    <br>
+    <button class="DiscordButton" name="discordButton">Discordでログイン</button>
 </form>
