@@ -28,3 +28,7 @@ session_start();
 
     <button class="button" name="buttonWord">ログイン</button>
 </form>
+
+<form class="form" method="post" action="LoginOauth.php">
+    <button class="" name="githubButton">Githubでログイン</button>
+</form>
